@@ -1,3 +1,5 @@
+@import "../sections/Video/Video.css";
+
 /* ---------- Top Navigation ---------- */
 
 .nav {
@@ -258,25 +260,6 @@ img.header__hero {
 
 .package-satisfaction {
     color: var(--yellow-100);
-}
-
-/* ---------- Video Section ---------- */
-.video-section {
-    background-color: var(--bg-color-20);
-}
-
-.video-section__video-wrapper {
-    max-width: 102.8rem;
-    height: 56.8rem;
-    margin: 0 auto;
-}
-
-.video-section__video {
-    border: none;
-
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
 }
 
 /* ---------- Features Section ---------- */
