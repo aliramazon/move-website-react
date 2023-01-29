@@ -1,0 +1,17 @@
+.video-section {
+    background-color: var(--bg-color-20);
+}
+
+.video-section__video-wrapper {
+    max-width: 102.8rem;
+    height: 56.8rem;
+    margin: 0 auto;
+}
+
+.video-section__video {
+    border: none;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
