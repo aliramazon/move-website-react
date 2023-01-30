@@ -1,0 +1,38 @@
+/* ---------- Features Section ---------- */
+.features-section {
+    background-color: var(--bg-color-20);
+}
+
+.features-section__cards {
+    display: flex;
+    gap: var(--spacing-7);
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    flex: 1 0 30rem;
+    background-color: var(--bg-color-10);
+    padding: var(--spacing-7);
+    border-radius: 1.5rem;
+    transition: all 0.3s;
+}
+
+.feature-card:hover {
+    box-shadow: 0rem 5rem 7.7rem rgba(176, 183, 195, 0.22);
+}
+
+.feature-card__icon {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 2.9rem;
+}
+
+.feature-card__heading {
+    margin-bottom: 2.1rem;
+}
+
+.feature-card__description {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+    color: var(--text-color-20);
+}
