@@ -34,7 +34,7 @@ export const Advantages = () => {
                             return <Advantage advantage={advantage} />;
                         })}
                     </ul>
-                    <a href="#" className="cta-link">
+                    <a href="/" className="cta-link">
                         Explore more features
                         <img
                             src={sodiqSotqin}

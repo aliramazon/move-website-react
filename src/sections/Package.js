@@ -51,7 +51,7 @@ export const Package = () => {
                     </p>
                     <PackageMetrics />
 
-                    <a href="#" className="cta-link">
+                    <a href="/" className="cta-link">
                         Explore more features
                         <img
                             src={arrowRight}
