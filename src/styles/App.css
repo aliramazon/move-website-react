@@ -1,5 +1,7 @@
 @import "../sections/Video/Video.css";
 @import "../sections/Features/Features.css";
+@import "../sections/Advantages/Advantages.css";
+@import "../sections/Hero/Hero.css";
 /* ---------- Top Navigation ---------- */
 .nav {
     display: flex;
@@ -58,55 +60,6 @@
     display: none;
 }
 
-/* ---------- Header ---------- */
-
-#header {
-    padding-top: var(--spacing-13);
-    position: relative;
-}
-
-#after-header-bg {
-    position: absolute;
-    bottom: 0;
-    height: 23vw;
-    width: 100%;
-    background-color: var(--bg-color-20);
-    z-index: -1;
-}
-
-.header__content {
-    display: flex;
-    justify-content: center;
-}
-
-.header__content > div {
-    max-width: 86rem;
-}
-
-#header__heading {
-    text-align: center;
-    margin-bottom: var(--spacing-7);
-}
-
-.header__sub-heading {
-    text-align: center;
-}
-
-.header__buttons {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-7);
-    margin-top: var(--spacing-9);
-}
-
-img.header__hero {
-    display: block;
-    height: auto;
-    width: 100%;
-    max-width: 140rem;
-    margin: 0 auto;
-}
-
 /* ---------- trustedby Section ---------- */
 
 .trustedby-section {
@@ -136,65 +89,6 @@ img.header__hero {
 
 .trustedby-section img {
     height: 4.2rem;
-    width: auto;
-}
-
-/* ---------- Advantages Section ---------- */
-.advantages-section {
-    background-color: var(--bg-color-10);
-}
-
-.row.advantages-section__content {
-    padding-right: 0;
-    display: flex;
-    gap: var(--spacing-12);
-}
-
-.advantages-section__info {
-    flex: 0 1 50%;
-    order: 1;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: var(--spacing-7);
-}
-
-.advantages-section__image {
-    display: flex;
-
-    align-items: center;
-    flex: 0 0 50%;
-    order: 2;
-}
-
-.advantages-section__image img {
-    width: 100%;
-    height: auto;
-    box-shadow: -2rem 2rem 2rem var(--bg-color-30);
-}
-
-.advantages-section__list {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: var(--spacing-7);
-}
-
-.advantages-section__list li {
-    flex: 0 0 40%;
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-5);
-
-    font-size: var(--font-size-4);
-    line-height: var(--line-height-3);
-    font-weight: var(--font-weight-400);
-    color: var(--text-color-10);
-}
-
-.advantages-section__list li > img {
-    height: 2.8rem;
     width: auto;
 }
 

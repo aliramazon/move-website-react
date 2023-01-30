@@ -1,7 +1,7 @@
-import { Hero } from "./sections/Hero";
+import { Hero } from "./sections/Hero/Hero";
 import { TopNav } from "./sections/TopNav";
 import { TrustedBy } from "./sections/TrustedBy";
-import { Advantages } from "./sections/Advantages";
+import { Advantages } from "./sections/Advantages/Advantages";
 import { Package } from "./sections/Package";
 import { Video } from "./sections/Video/Video";
 import { Features } from "./sections/Features/Features";

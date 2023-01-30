@@ -1,0 +1,48 @@
+/* ---------- Header ---------- */
+
+#header {
+    padding-top: var(--spacing-13);
+    position: relative;
+}
+
+#after-header-bg {
+    position: absolute;
+    bottom: 0;
+    height: 23vw;
+    width: 100%;
+    background-color: var(--bg-color-20);
+    z-index: -1;
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
+}
+
+.header__content > div {
+    max-width: 86rem;
+}
+
+#header__heading {
+    text-align: center;
+    margin-bottom: var(--spacing-7);
+}
+
+.header__sub-heading {
+    text-align: center;
+}
+
+.header__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-7);
+    margin-top: var(--spacing-9);
+}
+
+img.header__hero {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 140rem;
+    margin: 0 auto;
+}

@@ -1,4 +1,5 @@
-import hero2X from "../assets/hero@2x.png";
+import hero2X from "../../assets/hero@2x.png";
+
 export const Hero = () => {
     return (
         <header id="header">

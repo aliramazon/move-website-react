@@ -1,6 +1,6 @@
-import checkmark from "../assets/checkmark.svg";
-import sodiqSotqin from "../assets/icon-arrow-right.svg";
-import advantageDashboard2X from "../assets/advantage-dashboard@2x.png";
+import checkmark from "../../assets/checkmark.svg";
+import sodiqSotqin from "../../assets/icon-arrow-right.svg";
+import advantageDashboard2X from "../../assets/advantage-dashboard@2x.png";
 
 const advantages = [
     "Real-time data",
