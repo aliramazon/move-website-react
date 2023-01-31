@@ -1,5 +1,5 @@
-import arrowRight from "../assets/icon-arrow-right.svg";
-import console2X from "../assets/console@2x.png";
+import arrowRight from "../../assets/icon-arrow-right.svg";
+import console2X from "../../assets/console@2x.png";
 
 const packageMetrics = [
     {
