@@ -1,11 +1,14 @@
-import { Hero } from "./sections/Hero/Hero";
 import { TopNav } from "./sections/TopNav";
 import { TrustedBy } from "./sections/TrustedBy";
-import { Advantages } from "./sections/Advantages/Advantages";
-import { Package } from "./sections/Package";
-import { Video } from "./sections/Video/Video";
-import { Features } from "./sections/Features/Features";
 
+import {
+    Advantages,
+    Hero,
+    Video,
+    Features,
+    Pricing,
+    Package
+} from "./sections";
 const App = () => {
     return (
         <>
@@ -16,6 +19,7 @@ const App = () => {
             <Package />
             <Video />
             <Features />
+            <Pricing />
         </>
     );
 };
