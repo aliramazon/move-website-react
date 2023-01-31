@@ -4,40 +4,7 @@
 @import "../sections/Hero/Hero.css";
 @import "../sections/Pricing/Pricing.css";
 @import "../sections/Package/Package.css";
-/* ---------- Top Navigation ---------- */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--white);
-    height: var(--spacing-12);
-    width: 100%;
-}
-
-.sticky {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 1px 5px var(--blue-10);
-}
-
-.nav__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.nav__logo {
-    height: var(--logo-big-height);
-    width: auto;
-}
-
-.nav__links {
-    display: flex;
-    gap: var(--spacing-7);
-}
+@import "../sections/TopNav/TopNav.css";
 
 /* Mobile */
 
@@ -56,10 +23,6 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-}
-
-#menu-icon {
-    display: none;
 }
 
 /* ---------- trustedby Section ---------- */

@@ -1,4 +1,3 @@
-import { TopNav } from "./sections/TopNav";
 import { TrustedBy } from "./sections/TrustedBy";
 
 import {
@@ -7,7 +6,8 @@ import {
     Video,
     Features,
     Pricing,
-    Package
+    Package,
+    TopNav
 } from "./sections";
 const App = () => {
     return (

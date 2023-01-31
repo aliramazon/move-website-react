@@ -1,0 +1,41 @@
+/* ---------- Top Navigation ---------- */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    height: var(--spacing-12);
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 1px 5px var(--blue-10);
+}
+
+.nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav__content svg {
+    height: var(--logo-big-height);
+    width: auto;
+}
+
+.nav__links {
+    display: flex;
+    gap: var(--spacing-7);
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    height: 4.1rem;
+    width: auto;
+}
