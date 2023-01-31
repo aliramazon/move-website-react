@@ -1,6 +1,99 @@
 import { BlueCheckmarkIcon } from "../../assets/icons";
 
-<BlueCheckmarkIcon />;
+const prices = [
+    {
+        name: "Free",
+        description: "Free start for your project on our platform.",
+        cost: 0,
+        usage: "Per User / Per Year",
+        features: [
+            "Access to editing all blocks",
+            "Editing blocks together",
+            "Access to all premium icons",
+            "A dedicated domain",
+            "Ability to integrate with CMS"
+        ],
+        button: {
+            text: "Try for free",
+            type: "btn-secondary"
+        }
+    },
+    {
+        name: "Standard",
+        description: "For a small company that wants to show what it's worth.",
+        cost: 400,
+        usage: "Per User / Per Year",
+        features: [
+            "Access to editing all blocks 1",
+            "Editing blocks together 2",
+            "Access to all premium icons 3",
+            "A dedicated domain 4",
+            "Ability to integrate with CMS 5"
+        ],
+        button: {
+            text: "Start 14 days free trial",
+            type: "btn-primary"
+        }
+    },
+    {
+        name: "Ultimate",
+        description:
+            "For a large company that wants to achieve maximum returns",
+        cost: 600,
+        usage: "Per User / Per Year",
+        features: [
+            "Access to editing all blocks 10",
+            "Editing blocks together 20",
+            "Access to all premium icons 30",
+            "A dedicated domain 40",
+            "Ability to integrate with CMS 50"
+        ],
+        buttonText: "Start 14 days free trial",
+        button: {
+            text: "Start 14 days free trial",
+            type: "btn-secondary"
+        }
+    }
+];
+
+const PricingCards = () => {
+    return (
+        <div className="pricing-section__plans">
+            {prices.map((price) => {
+                return (
+                    <div className="pricing-card">
+                        <h5 className="pricing-card__heading">{price.name}</h5>
+                        <p className="pricing-card__text pricing-card__subheading">
+                            {price.description}
+                        </p>
+                        <div className="pricing-card__price">
+                            <h4>${price.cost}</h4>
+                            <p className="pricing-card__text">{price.usage}</p>
+                        </div>
+                        <ul className="pricing-card__list">
+                            {price.features.map((feature, idx) => {
+                                return (
+                                    <li
+                                        className="pricing-card__text"
+                                        key={idx}
+                                    >
+                                        <BlueCheckmarkIcon />
+                                        {feature}
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                        <button
+                            className={`btn btn-lg btn-full-width ${price.button.type} pricing-card__btn`}
+                        >
+                            {price.button.text}
+                        </button>
+                    </div>
+                );
+            })}
+        </div>
+    );
+};
 
 export const Pricing = () => {
     return (
@@ -21,118 +114,7 @@ export const Pricing = () => {
                     </label>
                     <span>Bill Anually</span>
                 </div>
-                <div className="pricing-section__plans">
-                    <div className="pricing-card">
-                        <h5 className="pricing-card__heading">Free</h5>
-                        <p className="pricing-card__text pricing-card__subheading">
-                            Free start for your project on our platform.
-                        </p>
-                        <div className="pricing-card__price">
-                            <h4>$0</h4>
-                            <p className="pricing-card__text">
-                                Per User / Per Year
-                            </p>
-                        </div>
-                        <ul className="pricing-card__list">
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon /> Access to editing all
-                                blocks
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Editing blocks together
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Access to all premium icons
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />A dedicated domain
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Ability to integrate with CMS
-                            </li>
-                        </ul>
-                        <button className="btn btn-lg btn-full-width btn-secondary pricing-card__btn">
-                            Try for free
-                        </button>
-                    </div>
-                    <div className="pricing-card">
-                        <h5 className="pricing-card__heading">Standard</h5>
-                        <p className="pricing-card__text pricing-card__subheading">
-                            For a small company that wants to show what it's
-                            worth.
-                        </p>
-                        <div className="pricing-card__price">
-                            <h4>$300</h4>
-                            <p className="pricing-card__text">
-                                Per User / Per Year
-                            </p>
-                        </div>
-                        <ul className="pricing-card__list">
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Access to editing all blocks
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Editing blocks together
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Access to all premium icons
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />A dedicated domain
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Ability to integrate with CMS
-                            </li>
-                        </ul>
-                        <button className="btn btn-lg btn-full-width btn-primary">
-                            Start 14 Days Free Trial
-                        </button>
-                    </div>
-                    <div className="pricing-card">
-                        <h5 className="pricing-card__heading">Ultimate</h5>
-                        <p className="pricing-card__text pricing-card__subheading">
-                            For a large company that wants to achieve maximum
-                            returns
-                        </p>
-                        <div className="pricing-card__price">
-                            <h4>$600</h4>
-                            <p className="pricing-card__text">
-                                Per User / Per Year
-                            </p>
-                        </div>
-                        <ul className="pricing-card__list">
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Access to editing all blocks
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Editing blocks together
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Access to all premium icons
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />A dedicated domain
-                            </li>
-                            <li className="pricing-card__text">
-                                <BlueCheckmarkIcon />
-                                Ability to integrate with CMS
-                            </li>
-                        </ul>
-                        <button className="btn btn-lg btn-full-width btn-secondary">
-                            Start 14 Days Free Trial
-                        </button>
-                    </div>
-                </div>
+                <PricingCards />
             </div>
         </section>
     );
