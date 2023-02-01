@@ -6,7 +6,9 @@ import {
     Pricing,
     Package,
     TopNav,
-    TrustedBy
+    TrustedBy,
+    CTAAction,
+    Footer
 } from "./sections";
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
             <Video />
             <Features />
             <Pricing />
+            <CTAAction />
+            <Footer />
         </>
     );
 };

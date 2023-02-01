@@ -6,3 +6,5 @@ export * from "./Pricing/Pricing";
 export * from "./Package/Package";
 export * from "./TopNav/TopNav";
 export * from "./TrustedBy/TrustedBy";
+export * from "./CTAAction/CTAAction";
+export * from "./Footer/Footer";

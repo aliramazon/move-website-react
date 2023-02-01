@@ -59,9 +59,9 @@ const prices = [
 const PricingCards = () => {
     return (
         <div className="pricing-section__plans">
-            {prices.map((price) => {
+            {prices.map((price, idx) => {
                 return (
-                    <div className="pricing-card">
+                    <div className="pricing-card" key={idx}>
                         <h5 className="pricing-card__heading">{price.name}</h5>
                         <p className="pricing-card__text pricing-card__subheading">
                             {price.description}

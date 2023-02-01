@@ -22,9 +22,9 @@ const packageMetrics = [
 const PackageMetrics = () => {
     return (
         <div className="package-section__details">
-            {packageMetrics.map((packageMetric) => {
+            {packageMetrics.map((packageMetric, idx) => {
                 return (
-                    <div className="package-section__detail">
+                    <div className="package-section__detail" key={idx}>
                         <span className={packageMetric.className}>
                             {packageMetric.metric}
                         </span>

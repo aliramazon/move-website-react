@@ -23,11 +23,6 @@
     width: 100%;
 }
 
-.nav__content svg {
-    height: var(--logo-big-height);
-    width: auto;
-}
-
 .nav__links {
     display: flex;
     gap: var(--spacing-7);

@@ -60,7 +60,7 @@ const FeatureCard = (props) => {
 const FeaturesCards = () => {
     return (
         <div className="features-section__cards">
-            {features.map((feature) => {
+            {features.map((feature, idx) => {
                 return (
                     <>
                         {/* <div className="feature-card">
@@ -77,6 +77,7 @@ const FeaturesCards = () => {
                             </p>
                         </div> */}
                         <FeatureCard
+                            key={idx}
                             icon={feature.icon}
                             heading={feature.name}
                             text={feature.description}

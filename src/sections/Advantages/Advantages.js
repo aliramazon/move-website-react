@@ -30,8 +30,10 @@ export const Advantages = () => {
                         them!
                     </p>
                     <ul className="advantages-section__list">
-                        {advantages.map((advantage) => {
-                            return <Advantage advantage={advantage} />;
+                        {advantages.map((advantage, idx) => {
+                            return (
+                                <Advantage advantage={advantage} key={idx} />
+                            );
                         })}
                     </ul>
                     <a href="/" className="cta-link">
