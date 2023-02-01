@@ -5,3 +5,4 @@ export * from "./Video/Video";
 export * from "./Pricing/Pricing";
 export * from "./Package/Package";
 export * from "./TopNav/TopNav";
+export * from "./TrustedBy/TrustedBy";

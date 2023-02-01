@@ -1,5 +1,3 @@
-import { TrustedBy } from "./sections/TrustedBy";
-
 import {
     Advantages,
     Hero,
@@ -7,8 +5,10 @@ import {
     Features,
     Pricing,
     Package,
-    TopNav
+    TopNav,
+    TrustedBy
 } from "./sections";
+
 const App = () => {
     return (
         <>

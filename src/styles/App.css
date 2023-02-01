@@ -5,6 +5,7 @@
 @import "../sections/Pricing/Pricing.css";
 @import "../sections/Package/Package.css";
 @import "../sections/TopNav/TopNav.css";
+@import "../sections/TrustedBy/TrustedBy.css";
 
 /* Mobile */
 
@@ -23,38 +24,6 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-}
-
-/* ---------- trustedby Section ---------- */
-
-.trustedby-section {
-    background-color: var(--bg-color-20);
-}
-
-.trustedby-section__heading {
-    font-size: var(--font-size-6);
-    font-weight: var(--font-weight-400);
-    color: var(--text-color-20);
-    text-align: center;
-}
-
-.trustedby-section__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: var(--spacing-7);
-}
-
-.trustedby-section__logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.trustedby-section img {
-    height: 4.2rem;
-    width: auto;
 }
 
 /* ---------- CTA Section ---------- */

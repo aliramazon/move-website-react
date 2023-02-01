@@ -1,8 +1,8 @@
-import goldline from "../assets/goldline.svg";
-import aven from "../assets/aven.svg";
-import kanba from "../assets/kanba.svg";
-import kyan from "../assets/kyan.svg";
-import spotify from "../assets/spotify.svg";
+import goldline from "../../assets/goldline.svg";
+import aven from "../../assets/aven.svg";
+import kanba from "../../assets/kanba.svg";
+import kyan from "../../assets/kyan.svg";
+import spotify from "../../assets/spotify.svg";
 
 export const TrustedBy = () => {
     return (
