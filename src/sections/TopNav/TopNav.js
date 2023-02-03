@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Logo } from "../../assets";
 import { HamburgerIcon } from "../../assets/icons";
-
-import LogoMobile from "../../assets/Logo.svg";
 import CloseIcon from "../../assets/x-icon.svg";
 
 const links = [
