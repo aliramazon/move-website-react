@@ -62,27 +62,12 @@ const FeaturesCards = () => {
         <div className="features-section__cards">
             {features.map((feature, idx) => {
                 return (
-                    <>
-                        {/* <div className="feature-card">
-                            <img
-                                src={feature.icon}
-                                alt="Analitics"
-                                className="feature-card__icon"
-                            />
-                            <h6 className="feature-card__heading">
-                                {feature.name}
-                            </h6>
-                            <p className="feature-card__description">
-                                {feature.description}
-                            </p>
-                        </div> */}
-                        <FeatureCard
-                            key={idx}
-                            icon={feature.icon}
-                            heading={feature.name}
-                            text={feature.description}
-                        />
-                    </>
+                    <FeatureCard
+                        key={idx}
+                        icon={feature.icon}
+                        heading={feature.name}
+                        text={feature.description}
+                    />
                 );
             })}
         </div>

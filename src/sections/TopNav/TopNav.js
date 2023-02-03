@@ -62,11 +62,7 @@ export const TopNav = () => {
             >
                 <div className="row">
                     <div className="mobile-nav__header">
-                        <img
-                            src={LogoMobile}
-                            alt="Move"
-                            className="nav__logo"
-                        />
+                        <Logo />
                         <img
                             src={CloseIcon}
                             alt="Close"
