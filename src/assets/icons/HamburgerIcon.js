@@ -1,4 +1,4 @@
-export const HamburgerIcon = ({ id }) => {
+export const HamburgerIcon = ({ id, onClick }) => {
     return (
         <svg
             width="41"
@@ -7,6 +7,7 @@ export const HamburgerIcon = ({ id }) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             id="menu-icon"
+            onClick={onClick}
         >
             <path
                 d="M6 20.25H36.75"
